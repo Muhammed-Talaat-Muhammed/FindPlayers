@@ -11,7 +11,7 @@ private int q=0;
 private Point[] Par;
 	public Point[] findPlayers(String[] photo, int team, int threshold) {
 		// TODO Auto-generated method stub
-		if((photo.length<1)||(photo[0].length()==0)) {throw new NullPointerException("EMPTY IMG");}
+		if((photo.length<1)||(photo[0].length()==0)) {return null;}
 		Par=new Point[2500];
     	for(int i=0;i<2500;i++) {Par[i]=new Point(-1,-1);}
         char [][]photo0=new char[photo.length][photo[0].length()];int z=0;boolean Flag=true;
